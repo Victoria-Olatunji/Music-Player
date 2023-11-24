@@ -1,38 +1,97 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.app-main {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.player-container {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: Poppins;
+  background-color: #212121;
   color: white;
+  padding: 5px;
+  margin: 5px;
+  cursor:pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.player-container:hover {
+  background-color:black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.player-main{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
 }
+
+.player-card{
+  width:100%;
+  height: 50vh;
+  background-color: #212121;
+  border-radius: 20px;
+  -webkit-box-shadow: 13px 12px 40px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 13px 12px 40px -7px rgba(0,0,0,0.75);
+  box-shadow: 13px 12px 40px -7px rgba(0,0,0,0.75);
+}
+
+.control-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  gap:20px;
+}
+
+.icons{
+  box-shadow: 0px 0px 56px -5px  rgba(252,109,25,0.75);
+  -webkit-box-shadow: 0px 0px 56px -5px rgba(252,109,25,0.75);
+  -moz-box-shadow:  0px 0px 56px -5px rgba(252,109,25,0.75);
+  border-radius: 50%;
+}
+
+.icons:hover{
+  color: #ff9800 !important;
+  cursor: pointer;  
+}
+
+.activeSong-name{
+  color: white;
+  font-family: Poppins;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.activeArtist-name{
+  color: white;
+  font-family: Poppins;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 210px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.image-container{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  
+}
+.music-image{
+  width: 150px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  box-shadow: 0px 0px 56px -5px rgba(15,15,15,0.75) inset;
+  -webkit-box-shadow: 0px 0px 56px -5px rgba(15,15,15,0.75) inset;
+  -moz-box-shadow:  0px 0px 56px -5px rgba(15,15,15,0.75) inset;
+}
+
